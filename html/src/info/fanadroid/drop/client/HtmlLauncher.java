@@ -3,7 +3,7 @@ package info.fanadroid.drop.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import info.fanadroid.drop.Drop;
+import info.fanadroid.drop.GameScreen;
 
 public class HtmlLauncher extends GwtApplication {
 
@@ -46,6 +46,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener createApplicationListener () {
-                return new Drop();
+                return new GameScreen();
         }
 }
